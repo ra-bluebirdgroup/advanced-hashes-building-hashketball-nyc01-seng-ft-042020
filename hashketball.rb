@@ -39,20 +39,21 @@ Away Team:
 ROWS
 new_array = data.to_h
 
+new_array
 
 
 # def game_hash(new_array)
-new_hash = {
-  :home => {
-    :team_name => ""
-    :colors => ""
-    :players => ""
-    },
-  :away => {
-    :team_name => ""
-    :colors => ""
-    :players => ""
-    }}
+# new_hash = {
+#   :home => {
+#     :team_name => ""
+#     :colors => ""
+#     :players => ""
+#     },
+#   :away => {
+#     :team_name => ""
+#     :colors => ""
+#     :players => ""
+#     }}
 
 
 # if !new_hash.has_key?(:home)
