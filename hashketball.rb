@@ -1,4 +1,4 @@
-require 'csv' 
+require 'csv'
 data = CSV.parse(<<~ROWS, headers: true)
 
 |        Stat        |     Info          |         Info      |       Info        |         Info    |         Info      |
