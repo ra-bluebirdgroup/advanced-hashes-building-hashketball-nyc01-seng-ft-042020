@@ -22,8 +22,8 @@ if !new_hash.has_key?(:home)
  new_hash[:home] = {}
  end 
 
- if !new_hash.has_key?(:home)
-  new_hash[:home] = {}
+ if !new_hash.has_key?(:away)
+  new_hash[:away] = {}
   end
    #
   #  new_array.each do |row|
