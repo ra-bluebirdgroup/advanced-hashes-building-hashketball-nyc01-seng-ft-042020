@@ -1,8 +1,6 @@
-require 'csv'
-# Write your code here!
+require 'csv' 
+data = CSV.parse(<<~ROWS, headers: true)
 
-data =
-"
 |        Stat        |     Info          |         Info      |       Info        |         Info    |         Info      |
 | **Player Name**    | Jeff Adrien       | Bismack Biyombo   | DeSagna Diop      | Ben Gordon      | Kemba Walker      |
 | **Number**         | 4                 | 0                 | 2                 | 8               | 33                |
@@ -12,12 +10,9 @@ data =
 | **Assists**        | 1                 | 7                 | 12                | 2               | 12                |
 | **Steals**         | 2                 | 22                 | 4                 | 1               | 7                |
 | **Blocks**         | 7                 | 15                | 5                 | 1               | 5                 |
-| **Slam Dunks**     | 2                 | 10                | 5                 | 0               | 12                |"
-
-customers = CSV.new(data)
+| **Slam Dunks**     | 2                 | 10                | 5                 | 0               | 12                |
 
 
-puts customers
 
 
 # def game_hash(table)
