@@ -1,5 +1,5 @@
 require 'csv'
-data = CSV.parse(col_sep:"|", <<~ROWS, headers: true)
+data = CSV.new(data, col_sep:"|", row_sep::auto, quote_car:"")
 
 |        Stat        |     Info          |         Info      |       Info        |         Info    |      Info     |
 | **Player Name**    | Jeff Adrien       | Bismack Biyombo   | DeSagna Diop      | Ben Gordon      | Kemba Walker  |
