@@ -38,7 +38,7 @@ Away Team:
 
 ROWS
 new_array = data.to_a
-ne = new_array.select(&:include?("Jeff"))
+ne = new_array.collect{ |names| names == "Player Names" }
 p ne
 new_hash = {}
 
