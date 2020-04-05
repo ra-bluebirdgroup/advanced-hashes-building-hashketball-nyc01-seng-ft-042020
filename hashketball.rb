@@ -12,6 +12,7 @@ data = CSV.parse(<<~ROWS, col_sep: "|")
 | **Slam Dunks**     | 2                 | 10                | 5                 | 0               | 12            |
 ROWS
 data.to_a
+
 data.reject! { |value| value.empty?}
 
 data.each do |row|
