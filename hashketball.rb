@@ -1,5 +1,4 @@
 require 'csv'
-csv = CSV.new(data, col_sep:"|", row_sep::auto)
 data = "
 |        Stat        |     Info          |         Info      |       Info        |         Info    |      Info     |
 | **Player Name**    | Jeff Adrien       | Bismack Biyombo   | DeSagna Diop      | Ben Gordon      | Kemba Walker  |
@@ -12,6 +11,8 @@ data = "
 | **Blocks**         | 7                 | 15                | 5                 | 1               | 5             |
 | **Slam Dunks**     | 2                 | 10                | 5                 | 0               | 12            |
 "
+
+csv = CSV.new(data, col_sep:"|", row_sep::auto)
 
 p data[2]
 
