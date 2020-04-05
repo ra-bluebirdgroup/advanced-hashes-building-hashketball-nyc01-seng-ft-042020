@@ -12,6 +12,7 @@ data = CSV.parse(<<~ROWS, col_sep: "|")
 | **Slam Dunks**     | 2                 | 10                | 5                 | 0               | 12            |
 ROWS
 data.reject! { |c| c.empty? }
+p data 
 
 
 # def game_hash(data)
