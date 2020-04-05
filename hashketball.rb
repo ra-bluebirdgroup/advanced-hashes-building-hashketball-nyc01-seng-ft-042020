@@ -13,8 +13,9 @@ data = CSV.parse(<<~ROWS, col_sep: "|")
 ROWS
 new_array = data.to_a
 new_array.reject! { |value| value.empty?}
+p new_array
 
 
 def game_hash(new_array)
- 
+
   end
