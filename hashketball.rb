@@ -12,8 +12,7 @@ data = CSV.parse(<<~ROWS, headers: true, col_sep ="|")
 | **Blocks**         | 7                 | 15                | 5                 | 1               | 5             |
 | **Slam Dunks**     | 2                 | 10                | 5                 | 0               | 12            |
 ROWS
-
-new_array = CSV.read(data)
+p data[0]
 
 
 # def game_hash(data)
