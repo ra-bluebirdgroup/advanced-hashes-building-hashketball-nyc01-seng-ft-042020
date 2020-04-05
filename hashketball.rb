@@ -38,7 +38,7 @@ Away Team:
 
 ROWS
 new_array = data.to_a
-p array[0]
+p new_array[0]
 p new_array[0].rassoc(1)
 
 new_hash = {}
