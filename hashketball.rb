@@ -13,14 +13,14 @@ data = CSV.parse(<<~ROWS, headers: true)
 | **Slam Dunks**     | 2                 | 10                | 5                 | 0               | 12            |
 ROWS
 
-def game_hash(data) 
+def game_hash(data)
   new_array = []
-  
-  data.each do |row|  
+
+  data.each do |row|
     row.split(", ") 
-     
-    
-   
+
+
+
 
 
 #   #
