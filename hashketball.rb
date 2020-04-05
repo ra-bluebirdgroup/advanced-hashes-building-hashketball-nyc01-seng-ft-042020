@@ -38,7 +38,7 @@ Away Team:
 
 ROWS
 new_array = data.to_a
-p new_array[0]
+p new_array.find(Home)
 p new_hash = {}
 
 if !new_hash.has_key?(:home)
@@ -61,7 +61,7 @@ if !new_hash[:home].has_key?(:home)
        }
 end
 
-p  new_hash
+# p  new_hash
 
 # p new_hash
 # p new_array
