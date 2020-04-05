@@ -16,50 +16,5 @@ new_array.reject! { |value| value.empty?}
 
 
 def game_hash(new_array)
- # data.reject! { |value| value.empty?}
- #
- # data.each do |row|
- #   row.reject! {|value| value.empty?}
- # end
- #
- #   p data
-
-end
-#
-#   data.each do |row|
-#     new_array << row.split(", ")
-#   end
-#
-# p new_array
-#
-# end
-
-
-
-
-
-#   #
-#   #   :home {
-#   #     :team_name => "team_name"
-#   #     :colors => ["red", "blue"]
-#   #     :players => [
-#   #      {:player_name => ""
-#   #      :number => ""
-#   #      :shoe => ""
-#   #      :points => ""
-#   #      :rebounds => ""
-#   #      :assists => ""
-#   #      :steals => ""
-#   #      :blocks => ""
-#   #      :slam_dunks => ""
-#   #      }
-#   #    ]
-#   #   }
-#   #   :away {
-#   #
-#   #   }
-#   #
-#   #
-#   # }
-# end
-# p data
+ 
+  end
