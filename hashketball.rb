@@ -42,8 +42,8 @@ new_array = data.to_a
 new_array.flatten!
 new_array.join(", ")
 p new_array
-ne = new_array.collect{ |names| names.include?("Home") }
-p ne
+# ne = new_array.collect{ |names| names.include?("Home") }
+# p ne
 new_hash = {}
 
 if !new_hash.has_key?(:home)
