@@ -40,7 +40,7 @@ ROWS
 new_array = data.to_a
 p new_array[20]
 p new_array[21]
-p new_array[24]
+p new_array[25]
 
 new_hash = {}
 
