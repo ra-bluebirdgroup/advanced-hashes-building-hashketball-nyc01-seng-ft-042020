@@ -23,3 +23,4 @@ new_hash = {}
   #
 
 p new_hash
+end
