@@ -14,7 +14,7 @@ data = "
 
 csv = CSV.new(data, col_sep:"|", row_sep::auto)
 
-p data[2]
+p csv[2]
 
 
 # def game_hash(data)
