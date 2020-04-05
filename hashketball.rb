@@ -39,8 +39,6 @@ Away Team:
 ROWS
 new_array = data.to_a
 p new_array[0]
-hash = new_array.map(&:reverse).to_h
-hash["Y"]
 
 new_hash = {}
 
@@ -54,7 +52,13 @@ end
 
 if !new_hash[:home].has_key?(:home)
    new_hash[:home] = {}
-end
+end 
+
+new_hash[:home] <<  {
+    :team_name => ""
+    :colors => ""
+    :players => ""
+    }
 
 # p new_hash
 # p new_array
