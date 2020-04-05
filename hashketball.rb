@@ -11,12 +11,12 @@ data = CSV.parse(<<~ROWS, col_sep: "|")
 | **Blocks**         | 7                 | 15                | 5                 | 1               | 5             |
 | **Slam Dunks**     | 2                 | 10                | 5                 | 0               | 12            |
 ROWS
-data.reject! { |c| c.empty? }
-p data 
 
-
-# def game_hash(data)
-#   new_array = []
+def game_hash(data) 
+ data.reject. { |nil| nil.empty?}
+ data.each do |row|  
+   row.reject { |nil| nil.empty?}
+   
 #
 #   data.each do |row|
 #     new_array << row.split(", ")
