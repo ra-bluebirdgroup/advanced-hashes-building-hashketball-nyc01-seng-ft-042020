@@ -39,7 +39,7 @@ Away Team:
 ROWS
 new_array = data.to_a
 p new_array[0]
-hash = array.map(&:reverse).to_h
+hash = new_array.map(&:reverse).to_h
 hash["Y"]
 
 new_hash = {}
