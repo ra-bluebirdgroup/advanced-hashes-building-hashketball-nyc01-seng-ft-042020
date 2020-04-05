@@ -20,7 +20,11 @@ new_hash = {}
 
 if !new_hash.has_key?(:home)
  new_hash[:home] = {}
- end
+ end 
+
+ if !new_hash.has_key?(:home)
+  new_hash[:home] = {}
+  end
    #
   #  new_array.each do |row|
   #    row.each do |info|
