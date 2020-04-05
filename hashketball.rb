@@ -14,7 +14,7 @@ ROWS
 new_array = data.to_a
 
 new_array.reject! { |value| value.empty?}
-  p new_array
+  p new_array[0]
 
 def game_hash(data)
  # data.reject! { |value| value.empty?}
