@@ -17,14 +17,18 @@ new_array = data.to_a
 
 # def game_hash(new_array)
 new_hash = {}
-
-if !new_hash.has_key?(:home)
- new_hash[:home] = {}
- end
-
- if !new_hash.has_key?(:away)
-  new_hash[:away] = {}
-  end
+     new_hash << :home => date , :away => newTweet  }
+# if !new_hash.has_key?(:home)
+#  new_hash[:home] = {}
+#  end
+#
+#  if !new_hash.has_key?(:away)
+#   new_hash[:away] = {}
+#   end
+#
+#   if !new_hash[:home].has_key?(:home)
+#    new_hash[:home] = {}
+#    end
    #
   #  new_array.each do |row|
   #    row.each do |info|
