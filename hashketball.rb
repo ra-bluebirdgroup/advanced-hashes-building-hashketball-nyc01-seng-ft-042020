@@ -54,7 +54,7 @@ if !new_hash[:home].has_key?(:home)
    new_hash[:home] = {}
 end
 
-new_hash[:home] <  {
+new_hash[:home] << {
     :team_name => "",
     :colors => "",
     :players => "",
