@@ -40,10 +40,10 @@ ROWS
 new_array = data.to_a
 
 new_array.flatten!
-new_array.join(", ")
-new_array.each do |str|
-  str.strip
-end
+# new_array.join(", ")
+# new_array.each do |str|
+  # str.strip
+# end
 p new_array
 # ne = new_array.collect{ |names| names.include?("Home") }
 # p ne
