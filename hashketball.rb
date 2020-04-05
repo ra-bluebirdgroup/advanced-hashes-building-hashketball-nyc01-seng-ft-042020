@@ -21,13 +21,13 @@ new_hash = {
     :team_name
     :colors
     :players
-    }, 
+    },
   :away => {
     :team_name
     :colors
     :players
     }}
-     
+
 
 # if !new_hash.has_key?(:home)
 #  new_hash[:home] = {}
