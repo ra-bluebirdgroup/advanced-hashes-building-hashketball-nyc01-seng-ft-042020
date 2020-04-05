@@ -16,7 +16,7 @@ new_array = data.to_a
 
 # def game_hash(new_array)
 new_hash = {}
- new_hash[home, away] = {}
+ new_hash[home] = {}
    #
   #  new_array.each do |row|
   #    row.each do |info|
