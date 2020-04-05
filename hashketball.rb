@@ -14,7 +14,7 @@ ROWS
 new_array = data.to_a
 
 
-def game_hash(new_array)
+# def game_hash(new_array)
 new_hash = {}
  new_hash[home, away] = {}
    #
@@ -23,4 +23,4 @@ new_hash = {}
   #
 
 p new_hash
-end
+# end
