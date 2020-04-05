@@ -39,7 +39,7 @@ Away Team:
 ROWS
 new_array = data.to_a
 p new_array[0]
-p new_array[0].rassoc("Home")
+p new_array[0].rassoc("Home Team")
 
 new_hash = {}
 
