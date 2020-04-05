@@ -13,7 +13,7 @@ data = CSV.parse(col_sep:"|", <<~ROWS, headers: true)
 | **Slam Dunks**     | 2                 | 10                | 5                 | 0               | 12            |
 ROWS
 
-p
+p data[2]
 
 
 # def game_hash(data)
