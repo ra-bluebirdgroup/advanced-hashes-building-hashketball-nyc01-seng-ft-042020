@@ -50,9 +50,9 @@ end
 
 if !new_hash.has_key?(:away)
   new_hash[:away] = {
-      new_array[20],
-      new_array[21],
-      new_array[26]
+      = new_array[20],
+      = new_array[21],
+      = new_array[26]
       }
 end
 
