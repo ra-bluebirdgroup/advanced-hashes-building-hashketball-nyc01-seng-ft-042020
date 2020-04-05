@@ -17,7 +17,7 @@ def game_hash(data)
   new_array = []
 
   data.each do |row|
-    row.split(", ") 
+    new_array << row.split(", ") 
 
 
 
