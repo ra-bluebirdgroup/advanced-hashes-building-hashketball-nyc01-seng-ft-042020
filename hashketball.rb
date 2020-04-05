@@ -12,11 +12,11 @@ data = CSV.parse(<<~ROWS, col_sep: "|")
 | **Slam Dunks**     | 2                 | 10                | 5                 | 0               | 12            |
 ROWS
 
-def game_hash(data) 
+def game_hash(data)
  data.reject. { |nil| nil.empty?}
- data.each do |row|  
+ data.each do |row|
    row.reject { |nil| nil.empty?}
-   
+
 #
 #   data.each do |row|
 #     new_array << row.split(", ")
