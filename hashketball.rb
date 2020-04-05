@@ -38,7 +38,7 @@ Away Team:
 
 ROWS
 new_array = data.to_a
-p new_array.rassoc("team")
+p new_array[0].rassoc(1)
 
 new_hash = {}
 
