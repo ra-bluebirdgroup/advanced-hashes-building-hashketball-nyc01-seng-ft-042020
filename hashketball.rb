@@ -13,7 +13,7 @@ data = CSV.parse(<<~ROWS, headers: true)
 | **Slam Dunks**     | 2                 | 10                | 5                 | 0               | 12            |
 ROWS
 
-new_array = data.to_a
+new_array = data.to_h
 p new_array
 
 
