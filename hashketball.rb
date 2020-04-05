@@ -38,7 +38,9 @@ Away Team:
 
 ROWS
 new_array = data.to_a
-p new_array[20]
+p new_array[20] 
+p new_array[21]
+p new_array[22]
 
 new_hash = {}
 
