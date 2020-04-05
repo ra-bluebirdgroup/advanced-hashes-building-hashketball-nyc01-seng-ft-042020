@@ -37,7 +37,9 @@ Away Team:
 | **Slam Dunks**     | 2                 | 10                | 5                 | 0               | 12                |
 
 ROWS
-new_array = data.to_a
+new_array = data.to_a 
+
+new_array.flatten!
 ne = new_array.collect{ |names| names.include?("Home") }
 p ne
 new_hash = {}
