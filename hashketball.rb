@@ -54,14 +54,12 @@ if !new_hash.has_key?(:away)
 end
 
 if !new_hash[:home].has_key?(:home)
-   new_hash[:home] = {}
+   new_hash[:home] = {
+       :team_name => "",
+       :colors => "",
+       :players => "",
+       }
 end
-
-new_hash[:home]  {
-    :team_name => "",
-    :colors => "",
-    :players => "",
-    }
 
 p  new_hash
 
