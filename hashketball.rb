@@ -14,7 +14,7 @@ data = CSV.parse(<<~ROWS, headers: true)
 ROWS
 
 
-p data[0]
+p data[1]
 
 
 # def game_hash(table)
