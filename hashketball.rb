@@ -1,6 +1,5 @@
 require 'csv'
 data = CSV.parse(<<~ROWS, col_sep: "|")
-
 |        Stat        |     Info          |         Info      |       Info        |         Info    |      Info     |
 | **Player Name**    | Jeff Adrien       | Bismack Biyombo   | DeSagna Diop      | Ben Gordon      | Kemba Walker  |
 | **Number**         | 4                 | 0                 | 2                 | 8               | 33            |
