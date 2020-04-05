@@ -11,11 +11,11 @@ data = CSV.parse(<<~ROWS, col_sep: "|")
 | **Blocks**         | 7                 | 15                | 5                 | 1               | 5             |
 | **Slam Dunks**     | 2                 | 10                | 5                 | 0               | 12            |
 ROWS
-data.to_a
+new_array = data.to_a
 
-data.reject! { |value| value.empty?}
+new_array.reject! { |value| value.empty?}
 
-data.each do |row|
+new_array.each do |row|
   row.reject! {|value| value.empty?}
 end
 
