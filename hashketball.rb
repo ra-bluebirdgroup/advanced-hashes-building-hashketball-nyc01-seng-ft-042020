@@ -1,5 +1,5 @@
 require 'csv'
-data = CSV.parse(<<~ROWS, headers: true)
+data = CSV.parse(col_sep(|))
 
 |        Stat        |     Info          |         Info      |       Info        |         Info    |      Info     |
 | **Player Name**    | Jeff Adrien       | Bismack Biyombo   | DeSagna Diop      | Ben Gordon      | Kemba Walker  |
@@ -12,7 +12,8 @@ data = CSV.parse(<<~ROWS, headers: true)
 | **Blocks**         | 7                 | 15                | 5                 | 1               | 5             |
 | **Slam Dunks**     | 2                 | 10                | 5                 | 0               | 12            |
 ROWS
-p data[2]
+
+new_array = CSV.read(data)
 
 
 # def game_hash(data)
