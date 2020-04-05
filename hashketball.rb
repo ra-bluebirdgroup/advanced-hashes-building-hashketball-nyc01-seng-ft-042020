@@ -37,7 +37,9 @@ Away Team:
 | **Slam Dunks**     | 2                 | 10                | 5                 | 0               | 12                |
 
 ROWS
-new_array = data.to_a
+new_array = data.to_a 
+p new_array.reassc("team name")
+
 new_hash = {}
 
 if !new_hash.has_key?(:home)
@@ -52,11 +54,8 @@ if !new_hash[:home].has_key?(:home)
    new_hash[:home] = {}
 end
 
-p new_hash
-
-
-
- # p new_array
+# p new_hash
+# p new_array
 
 
 # def game_hash(new_array)
