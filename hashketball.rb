@@ -37,7 +37,7 @@ Away Team:
 | **Slam Dunks**     | 2                 | 10                | 5                 | 0               | 12                |
 
 ROWS
-new_array = data.to_a 
+new_array = data.to_a
 p new_array.reassc("team name")
 
 new_hash = {}
