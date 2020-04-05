@@ -74,5 +74,5 @@ p new_array[3]
   #    row.each do |info|
   #
 
-p new_hash
+
 # end
