@@ -39,6 +39,7 @@ Away Team:
 ROWS
 new_array = data.to_a
 ne = new_array.select { |v| v.include?("Jeff")}
+p ne
 new_hash = {}
 
 if !new_hash.has_key?(:home)
