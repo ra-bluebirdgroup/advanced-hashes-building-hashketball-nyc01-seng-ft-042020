@@ -12,13 +12,7 @@ data = CSV.parse(<<~ROWS, headers: true)
 | **Blocks**         | 7                 | 15                | 5                 | 1               | 5             |
 | **Slam Dunks**     | 2                 | 10                | 5                 | 0               | 12            |
 ROWS
-new_array = []
 
-data.each do |row|
-  new_array << row.split(", ")
-end
-
-p new_array
 
 
 # def game_hash(data)
