@@ -16,9 +16,18 @@ new_array = data.to_a
 
 
 # def game_hash(new_array)
-new_hash = {:home => {}, :away => {}}
-    :home << (:team_name)
-    
+new_hash = {
+  :home => {
+    :team_name
+    :colors
+    :players
+    }, 
+  :away => {
+    :team_name
+    :colors
+    :players
+    }}
+     
 
 # if !new_hash.has_key?(:home)
 #  new_hash[:home] = {}
