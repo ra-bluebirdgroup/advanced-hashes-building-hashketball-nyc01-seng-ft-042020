@@ -17,8 +17,8 @@ new_array = data.to_a
 
 # def game_hash(new_array)
 new_hash = {}
-     new_hash << :home => date , :away => newTweet  }
-    
+     new_hash << :home => date , :away => newTweet  
+
 # if !new_hash.has_key?(:home)
 #  new_hash[:home] = {}
 #  end
