@@ -13,7 +13,7 @@ data ="
 "
 csv = CSV.new(data, {:col_sep => "|"})
 csv.first << data
-p csv
+p csv[0]
 
 # def game_hash(data)
 #   new_array = []
