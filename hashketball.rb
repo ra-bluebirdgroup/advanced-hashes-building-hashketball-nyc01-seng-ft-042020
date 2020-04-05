@@ -55,11 +55,11 @@ if !new_hash[:home].has_key?(:home)
 end
 
 new_hash[:home] <<  {
-    :team_name => ""
-    :colors => ""
-    :players => ""
+    :team_name => "",
+    :colors => "",
+    :players => "",
     }
-    
+
   new_hash
 
 # p new_hash
