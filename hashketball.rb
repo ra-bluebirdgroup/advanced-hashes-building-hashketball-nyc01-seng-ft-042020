@@ -62,7 +62,7 @@ if !new_hash[:home].has_key?(:home)
        }
 end
 
-# p  new_hash
+p  new_hash
 
 # p new_hash
 # p new_array
