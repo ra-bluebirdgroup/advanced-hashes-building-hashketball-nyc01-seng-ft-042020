@@ -7,13 +7,13 @@ data = CSV.parse(<<~ROWS, col_sep: "|")
 | **Points**         | 10                | 12                | 24                | 33              | 6             |
 | **Rebounds**       | 1                 | 4                 | 12                | 3               | 12            |
 | **Assists**        | 1                 | 7                 | 12                | 2               | 12            |
-| **Steals**         | 2                 | 22                 | 4                 | 1              | 7             |
+| **Steals**         | 2                 | 22                | 4                 | 1               | 7             |
 | **Blocks**         | 7                 | 15                | 5                 | 1               | 5             |
 | **Slam Dunks**     | 2                 | 10                | 5                 | 0               | 12            |
 ROWS
 new_array = data.to_a
 new_array.each do reject! { |value| value.empty?} end
-  p new_array
+
 
 
 
