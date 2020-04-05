@@ -16,7 +16,7 @@ def game_hash(data)
  data.reject! { |nil| nil.empty?}
 
  data.each do |row|
-   row.reject!{|nil| nil.empty?}
+   row.reject! {|nil| nil.empty?}
  end
 
    p data
