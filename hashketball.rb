@@ -11,7 +11,7 @@ data ="
 | **Blocks**         | 7                 | 15                | 5                 | 1               | 5             |
 | **Slam Dunks**     | 2                 | 10                | 5                 | 0               | 12            |
 "
-csv = CSV.new(data, **options {:col_sep => "\t"}))
+csv = CSV.new(data, **options {:col_sep => "\t"})
 p
 
 
