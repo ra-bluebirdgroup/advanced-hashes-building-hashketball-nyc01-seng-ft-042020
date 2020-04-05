@@ -13,7 +13,7 @@ data = CSV.parse(<<~ROWS, col_sep: "|")
 ROWS
 
 def game_hash(data)
- data.reject! { |nil| nil.empty?}
+ data.reject! { |value| value.empty?}
 
  data.each do |row|
    row.reject! {|nil| nil.empty?}
