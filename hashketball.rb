@@ -17,6 +17,7 @@ new_array = data.to_a
 
 # def game_hash(new_array)
 new_hash = {}
+
 if !new_hash.has_key?()
  new_hash[home] = {}
  end
