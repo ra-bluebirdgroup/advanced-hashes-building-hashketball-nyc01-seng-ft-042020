@@ -12,7 +12,7 @@ data ="
 | **Slam Dunks**     | 2                 | 10                | 5                 | 0               | 12            |
 "
 csv = CSV.new(data, {:col_sep => "|"})
-p csv[0]
+csv.first
 
 
 # def game_hash(data)
