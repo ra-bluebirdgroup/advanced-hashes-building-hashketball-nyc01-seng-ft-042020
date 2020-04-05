@@ -22,13 +22,13 @@ end
   
 def game_hash(data)
  # data.reject! { |value| value.empty?}
- # 
+ #
  # data.each do |row|
  #   row.reject! {|value| value.empty?}
  # end
- # 
+ #
  #   p data
-   
+
 end
 #
 #   data.each do |row|
