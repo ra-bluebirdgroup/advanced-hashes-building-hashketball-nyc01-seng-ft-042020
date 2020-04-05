@@ -51,8 +51,8 @@ end
 if !new_hash.has_key?(:away)
   new_hash[:away] =  {
       :team_name => new_array[20],
-      :colors => new_array[21],
-      :players => new_array[26].each do |i| i.strip end 
+      :colors => new_array[21]
+      :players => new_array[26] 
       }
 end
 
