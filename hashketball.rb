@@ -1,104 +1,27 @@
-require 'csv'
-data = CSV.parse(<<~ROWS, col_sep: "|")
-Home Team:
+{:home => {
+   :team_name => 'Brooklyn Nets',
+   :colors => ['black', 'white'],
+   :players => [
+     {player_name: 'Alan Anderson', number: 0, shoe: 16, points: 22, rebounds: 12, assists: 12, steals: 3, blocks: 1, slam_dunks: 1},
+     {player_name: 'Reggie Evans', number: 30, shoe: 14, points: 12, rebounds: 12, assists: 12, steals: 12, blocks: 12, slam_dunks: 7},
+     {player_name: 'Brook Lopez', number: 11, shoe: 17, points: 17, rebounds: 19, assists: 10, steals: 3, blocks: 1, slam_dunks: 15},
+     {player_name: 'Mason Plumlee', number: 1, shoe: 19, points: 26, rebounds: 12, assists: 6, steals: 3, blocks: 8, slam_dunks: 5},
+     {player_name: 'Jason Terry', number: 31, shoe: 15, points: 19, rebounds: 2, assists: 2, steals: 4, blocks: 11, slam_dunks: 1}
+     ] 
+     }, 
 
-* team name: Brooklyn Nets
-* colors: Black, White
-* players:
+     :away => {
+       
+     :team_name => 'Charlotte Hornets',
+     :colors => ['turquoise', 'purple'],
+     :players => [
+       
+       {player_name: 'Jeff Adrien', number: 4, shoe: 18, points: 10, rebounds: 1, assists: 1, steals: 2, blocks: 7, slam_dunks: 2},
+       {player_name: 'Bismak Biyombo', number: 0, shoe: 16, points: 12, rebounds: 4, assists: 7, steals: 7, blocks: 15, slam_dunks: 10},
+       {player_name: 'DeSagna Diop', number: 2, shoe: 14, points: 24, rebounds: 12, assists: 12, steals: 4, blocks: 5, slam_dunks: 5},
+       {player_name: 'Ben Gordon', number: 8, shoe: 15, points: 33, rebounds: 3, assists: 2, steals: 1, blocks: 1, slam_dunks: 0},
+       {player_name: 'Brendan Haywood', number: 33, shoe: 15, points: 6, rebounds: 12, assists: 12, steals: 22, blocks: 5, slam_dunks: 12}
 
-|          Stat          | Info | Info |  Info | Info | Info   |
-|:------------------:|:-------------:|:------------:|:------------:|:-------------:|:-------------:|
-| **Player Name**    |  Alan Anderson| Reggie Evans | Brook Lopez  | Mason Plumlee | Jason Terry   |
-| **Number**         | 0             | 30           | 11           | 1             | 31            |
-| **Shoe**           | 16            | 14           | 17           | 19            | 15            |
-| **Points**         | 22            | 12           | 17           | 26            | 19            |
-| **Rebounds**       | 12            | 12           | 19           | 11            | 2             |
-| **Assists**        | 12            | 12           | 10           | 6             | 2             |
-| **Steals**         | 3             | 12           | 3            | 3             | 4             |
-| **Blocks**         | 1             | 12           | 1            | 8             | 11            |
-| **Slam Dunks**     | 1             | 7            | 15           | 5             | 1             |
-
-Away Team:
-
-* team name: Charlotte Hornets
-* colors: Turquoise, Purple
-* players:
-
-|        Stat       |     Info          |         Info     |              Info |         Info     |         Info      |
-|:------------------:|:-----------------:|:-----------------:|:-----------------:|:---------------:|:-----------------:|
-| **Player Name**  | Jeff Adrien     | Bismack Biyombo    | DeSagna Diop      | Ben Gordon      | Kemba Walker   |
-| **Number**         | 4                 | 0                 | 2                 | 8               | 33                |
-| **Shoe**           | 18                | 16                | 14                | 15              | 15                |
-| **Points**         | 10                | 12                | 24                | 33              | 6                 |
-| **Rebounds**       | 1                 | 4                 | 12                | 3               | 12                |
-| **Assists**        | 1                 | 7                 | 12                | 2               | 12                |
-| **Steals**         | 2                 | 22                 | 4                 | 1               | 7                |
-| **Blocks**         | 7                 | 15                | 5                 | 1               | 5                 |
-| **Slam Dunks**     | 2                 | 10                | 5                 | 0               | 12                |
-
-ROWS
-new_array = data.to_a
-p new_array[20]
-p new_array[21]
-p new_array[26]
-
-new_hash = {}
-
-if !new_hash.has_key?(:home)
-    new_hash[:home] = {}
-end
-
-if !new_hash.has_key?(:away)
-  new_hash[:away] =  {
-      :team_name => new_array[20],
-      :colors => new_array[21],
-      :players => new_array[26]
-      }
-end
-
-if !new_hash[:home].has_key?(:home)
-   new_hash[:home] = {
-       :team_name => "",
-       :colors => "",
-       :players => "",
-       }
-end
-
-p  new_hash
-
-# p new_hash
-# p new_array
-
-
-# def game_hash(new_array)
-# new_hash = {
-#   :home => {
-#     :team_name => ""
-#     :colors => ""
-#     :players => ""
-#     },
-#   :away => {
-#     :team_name => ""
-#     :colors => ""
-#     :players => ""
-#     }}
-
-
-# if !new_hash.has_key?(:home)
-#  new_hash[:home] = {}
-#  end
-#
-#  if !new_hash.has_key?(:away)
-#   new_hash[:away] = {}
-#   end
-#
-#   if !new_hash[:home].has_key?(:home)
-#    new_hash[:home] = {}
-#    end
-   #
-  #  new_array.each do |row|
-  #    row.each do |info|
-  #
-
-
-# end
+       ]
+     }
+   }
