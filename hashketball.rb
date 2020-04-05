@@ -1,5 +1,6 @@
 require 'csv'
-data ="
+data = CSV.parse(<<~ROWS, headers: true)
+
 |        Stat        |     Info          |         Info      |       Info        |         Info    |      Info     |
 | **Player Name**    | Jeff Adrien       | Bismack Biyombo   | DeSagna Diop      | Ben Gordon      | Kemba Walker  |
 | **Number**         | 4                 | 0                 | 2                 | 8               | 33            |
@@ -10,10 +11,10 @@ data ="
 | **Steals**         | 2                 | 22                 | 4                 | 1              | 7             |
 | **Blocks**         | 7                 | 15                | 5                 | 1               | 5             |
 | **Slam Dunks**     | 2                 | 10                | 5                 | 0               | 12            |
-"
-csv = CSV.new(data, {:col_sep => "|"})
-csv.first << data
-p csv[0]
+ROWS
+
+new_array = CSV.read(data)
+
 
 # def game_hash(data)
 #   new_array = []
