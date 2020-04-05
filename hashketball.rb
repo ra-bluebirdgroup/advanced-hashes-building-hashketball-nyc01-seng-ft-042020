@@ -20,7 +20,7 @@ new_hash = {}
 
 if !new_hash.has_key?(:home)
  new_hash[:home] = {}
- end 
+ end
 
  if !new_hash.has_key?(:away)
   new_hash[:away] = {}
