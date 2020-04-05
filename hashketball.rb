@@ -38,7 +38,7 @@ Away Team:
 
 ROWS
 new_array = data.to_a
-ne = new_array.each.collect{ |names| names.include?("Home Team:") }
+ne = new_array.each.collect{ |names| names.include?("Home") }
 p ne
 new_hash = {}
 
