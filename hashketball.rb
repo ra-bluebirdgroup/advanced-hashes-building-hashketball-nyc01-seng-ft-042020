@@ -39,7 +39,6 @@ Away Team:
 ROWS
 new_array = data.to_a
 p new_array[0]
-
 new_hash = {}
 
 if !new_hash.has_key?(:home)
