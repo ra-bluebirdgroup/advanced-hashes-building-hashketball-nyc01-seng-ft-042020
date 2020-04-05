@@ -1,5 +1,5 @@
 require 'csv'
-data = CSV.parse(<<~ROWS, headers: true, col_sep ="|")
+data = CSV.parse(<<~ROWS, headers: true, col_sep: "|")
 
 |        Stat        |     Info          |         Info      |       Info        |         Info    |      Info     |
 | **Player Name**    | Jeff Adrien       | Bismack Biyombo   | DeSagna Diop      | Ben Gordon      | Kemba Walker  |
