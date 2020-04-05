@@ -41,8 +41,10 @@ new_array = data.to_a
 
 new_array.flatten!
 new_array.join(", ")
-new_array.collect{|x| x.strip || x }
-p new_array
+new_array.each do str
+  str.strip
+end
+new_array
 # ne = new_array.collect{ |names| names.include?("Home") }
 # p ne
 new_hash = {}
