@@ -13,7 +13,8 @@ data = CSV.parse(<<~ROWS, headers: true)
 | **Slam Dunks**     | 2                 | 10                | 5                 | 0               | 12            |
 ROWS
 
-puts new_hash = data.first.to_h
+new_hash = data.first.to_h
+puts new_hash
 
 
 # def game_hash(table)
