@@ -12,14 +12,22 @@ data = CSV.parse(<<~ROWS, col_sep: "|")
 | **Slam Dunks**     | 2                 | 10                | 5                 | 0               | 12            |
 ROWS
 
+data.reject! { |value| value.empty?}
+
+data.each do |row|
+  row.reject! {|value| value.empty?}
+end
+
+  p data
+  
 def game_hash(data)
- data.reject! { |value| value.empty?}
-
- data.each do |row|
-   row.reject! {|value| value.empty?}
- end
-
-   p data
+ # data.reject! { |value| value.empty?}
+ # 
+ # data.each do |row|
+ #   row.reject! {|value| value.empty?}
+ # end
+ # 
+ #   p data
    
 end
 #
