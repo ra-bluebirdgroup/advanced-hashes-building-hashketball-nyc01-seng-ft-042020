@@ -11,7 +11,7 @@ data = CSV.parse(<<~ROWS, headers: true)
 | **Steals**         | 2                 | 22                 | 4                 | 1               | 7                |
 | **Blocks**         | 7                 | 15                | 5                 | 1               | 5                 |
 | **Slam Dunks**     | 2                 | 10                | 5                 | 0               | 12                |
-
+ROWS
 
 
 
