@@ -60,7 +60,7 @@ new_hash[:home] <<  {
     :players => "",
     }
 
-  new_hash
+p  new_hash
 
 # p new_hash
 # p new_array
