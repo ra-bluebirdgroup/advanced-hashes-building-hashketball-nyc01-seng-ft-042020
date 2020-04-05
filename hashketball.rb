@@ -11,7 +11,7 @@ data = CSV.parse(<<~ROWS, col_sep: "|")
 | **Blocks**         | 7                 | 15                | 5                 | 1               | 5             |
 | **Slam Dunks**     | 2                 | 10                | 5                 | 0               | 12            |
 ROWS
-
+data.to_a
 data.reject! { |value| value.empty?}
 
 data.each do |row|
@@ -19,7 +19,7 @@ data.each do |row|
 end
 
   p data
-  
+
 def game_hash(data)
  # data.reject! { |value| value.empty?}
  #
