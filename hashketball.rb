@@ -41,7 +41,7 @@ new_array = data.to_a
 
 new_array.flatten!
 new_array.join(", ")
-new_array.each do str
+new_array.each do |str|
   str.strip
 end
 p new_array
