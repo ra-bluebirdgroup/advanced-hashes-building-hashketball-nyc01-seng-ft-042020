@@ -14,11 +14,6 @@ ROWS
 new_array = data.to_a
 
 new_array.reject! { |value| value.empty?}
-
-new_array.each do |row|
-  row.reject! {|value| value.empty?}
-end
-
   p new_array
 
 def game_hash(data)
