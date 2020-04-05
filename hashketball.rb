@@ -39,9 +39,9 @@ Away Team:
 ROWS
 new_array = data.to_a
 
-new_array[3]
+p new_array[3]
 
- p new_array
+ # p new_array
 
 
 def game_hash(new_array)
