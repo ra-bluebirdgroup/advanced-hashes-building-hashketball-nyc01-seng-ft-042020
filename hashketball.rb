@@ -44,7 +44,7 @@ new_array.join(", ")
 new_array.each do str
   str.strip
 end
-new_array
+p new_array
 # ne = new_array.collect{ |names| names.include?("Home") }
 # p ne
 new_hash = {}
