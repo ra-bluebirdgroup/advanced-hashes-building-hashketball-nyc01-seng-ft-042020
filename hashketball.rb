@@ -59,6 +59,7 @@ new_hash[:home] <<  {
     :colors => ""
     :players => ""
     }
+    
   new_hash
 
 # p new_hash
