@@ -19,7 +19,7 @@ new_array.each do |row|
   row.reject! {|value| value.empty?}
 end
 
-  p data
+  p new_array
 
 def game_hash(data)
  # data.reject! { |value| value.empty?}
