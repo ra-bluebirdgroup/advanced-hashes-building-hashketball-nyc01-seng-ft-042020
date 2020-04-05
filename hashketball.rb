@@ -1,5 +1,5 @@
 require 'csv'
-data = CSV.parse(col_sep(|))
+data = CSV.parse(col_sep(|), <<~ROWS, headers: true)
 
 |        Stat        |     Info          |         Info      |       Info        |         Info    |      Info     |
 | **Player Name**    | Jeff Adrien       | Bismack Biyombo   | DeSagna Diop      | Ben Gordon      | Kemba Walker  |
@@ -11,7 +11,7 @@ data = CSV.parse(col_sep(|))
 | **Steals**         | 2                 | 22                 | 4                 | 1              | 7             |
 | **Blocks**         | 7                 | 15                | 5                 | 1               | 5             |
 | **Slam Dunks**     | 2                 | 10                | 5                 | 0               | 12            |
-
+ROWS
 
 new_array = CSV.read(data)
 
