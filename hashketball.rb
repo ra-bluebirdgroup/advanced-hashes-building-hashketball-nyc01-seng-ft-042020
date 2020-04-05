@@ -39,11 +39,7 @@ Away Team:
 ROWS
 new_array = data.to_a
 p new_array
-new_array.flatten!
 
-p new_array
-# ne = new_array.collect{ |names| names.include?("Home") }
-# p ne
 new_hash = {}
 
 if !new_hash.has_key?(:home)
